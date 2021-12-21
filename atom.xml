@@ -6,12 +6,12 @@
   
   <link href="http://localhost:3000/"/>
   <id>http://localhost:3000/</id>
-  <updated>2019-04-25T13:34:25Z</updated>
+  <updated>2021-12-22T00:28:12Z</updated>
   <author>
     <name>Thiago Comitre</name>
     <email>me@thiagocomitre.com</email>
   </author>
-  <rights type="text">Copyright © 2019 Thiago Comitre. All rights reserved.</rights>
+  <rights type="text">Copyright © 2021 Thiago Comitre. All rights reserved.</rights>
   
   <entry>
   <title type="text">A Full and Comprehensive Style Test (HTML)</title>
@@ -393,7 +393,7 @@ c.draw = function() {
 
 <h2 id="typography-elements-in-one">Typography Elements in One</h2>
 
-<p>Let’s start with a informative paragraph. <strong>This text is bolded.</strong> But not this one! <em>How about italic text?</em> Cool right? Ok, let’s <strong><em>combine</em></strong> them together. Yeah, that’s right! I have code to highlight, so <code class="highlighter-rouge">ThisIsMyCode()</code>. What a nice! Good people will hyperlink away, so <a href="#">here we go</a> or <a href="http://www.example.com">http://www.example.com</a>.</p>
+<p>Let’s start with a informative paragraph. <strong>This text is bolded.</strong> But not this one! <em>How about italic text?</em> Cool right? Ok, let’s <strong><em>combine</em></strong> them together. Yeah, that’s right! I have code to highlight, so <code class="language-plaintext highlighter-rouge">ThisIsMyCode()</code>. What a nice! Good people will hyperlink away, so <a href="#">here we go</a> or <a href="http://www.example.com">http://www.example.com</a>.</p>
 
 <div class="divider"></div>
 
@@ -415,7 +415,7 @@ c.draw = function() {
 
 <h2 id="footnote">Footnote</h2>
 
-<p>Let’s say you have text that you want to refer with a footnote, you can do that too! This is an example for the footnote number one <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. You can even add more footnotes, with link! <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></p>
+<p>Let’s say you have text that you want to refer with a footnote, you can do that too! This is an example for the footnote number one <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. You can even add more footnotes, with link! <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
 
 <div class="divider"></div>
 
@@ -446,7 +446,7 @@ c.draw = function() {
 
 <h2 id="code-blocks">Code Blocks</h2>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="s2">"JavaScript syntax highlighting"</span><span class="p">;</span>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">JavaScript syntax highlighting</span><span class="dl">"</span><span class="p">;</span>
 <span class="nx">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">sys</span>  
@@ -463,7 +463,7 @@ c.draw = function() {
     <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
 <span class="p">}</span></code></pre></figure>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>No language indicated, so no syntax highlighting.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>No language indicated, so no syntax highlighting.
 But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
 </code></pre></div></div>
 
@@ -513,7 +513,7 @@ But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
   <tbody>
     <tr>
       <td><em>Still</em></td>
-      <td><code class="highlighter-rouge">renders</code></td>
+      <td><code class="language-plaintext highlighter-rouge">renders</code></td>
       <td><strong>nicely</strong></td>
     </tr>
     <tr>
@@ -528,12 +528,12 @@ But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
 
 <h2 id="horizontal-line">Horizontal Line</h2>
 
-<p>The HTML <code class="highlighter-rouge">&lt;hr&gt;</code> element is for creating a “thematic break” between paragraph-level elements. In markdown, you can create a <code class="highlighter-rouge">&lt;hr&gt;</code> with any of the following:</p>
+<p>The HTML <code class="language-plaintext highlighter-rouge">&lt;hr&gt;</code> element is for creating a “thematic break” between paragraph-level elements. In markdown, you can create a <code class="language-plaintext highlighter-rouge">&lt;hr&gt;</code> with any of the following:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">___</code>: three consecutive underscores</li>
-  <li><code class="highlighter-rouge">---</code>: three consecutive dashes</li>
-  <li><code class="highlighter-rouge">***</code>: three consecutive asterisks</li>
+  <li><code class="language-plaintext highlighter-rouge">___</code>: three consecutive underscores</li>
+  <li><code class="language-plaintext highlighter-rouge">---</code>: three consecutive dashes</li>
+  <li><code class="language-plaintext highlighter-rouge">***</code>: three consecutive asterisks</li>
 </ul>
 
 <p>renders to:</p>
@@ -556,13 +556,13 @@ But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
 
 <p><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn8cwf82ee9tfml4Wx-tsM5AUavJ_DRHIiXXE4RejRp0RF2L7f6g" alt="Nature" /></p>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1">
-      <p>Footnote number one yeah baby!&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1" role="doc-endnote">
+      <p>Footnote number one yeah baby! <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:2">
-      <p>A footnote you can link to - <a href="#">click here!</a>&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:2" role="doc-endnote">
+      <p>A footnote you can link to - <a href="#">click here!</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
